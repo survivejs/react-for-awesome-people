@@ -4,20 +4,20 @@ import { render } from "react-dom";
 import {
   Appear, BlockQuote, Cite, CodePane, Deck, Fill,
   Heading, Image, Layout, Link, ListItem, List, Markdown, Quote, Slide, Spectacle, Text
-} from "./src";
+} from "src";
 
-import preloader from "./src/utils/preloader";
+import preloader from "src/utils/preloader";
 
-import Interactive from "./assets/interactive";
+import Interactive from "assets/interactive";
 
 require("normalize.css");
-require("./src/themes/default/index.css");
+require("src/themes/default/index.css");
 
 const images = {
-  city: require("./assets/city.jpg"),
-  kat: require("./assets/kat.png"),
-  logo: require("./assets/formidable-logo.svg"),
-  markdown: require("./assets/markdown.png")
+  city: require("assets/city.jpg"),
+  kat: require("assets/kat.png"),
+  logo: require("assets/formidable-logo.svg"),
+  markdown: require("assets/markdown.png")
 };
 
 preloader([images.city, images.kat, images.markdown]);
@@ -49,7 +49,7 @@ render(
       <Slide transition={["zoom", "fade"]} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
         <CodePane
           lang="jsx"
-          source={require("raw!./assets/deck.example")}
+          source={require("raw!assets/deck.example")}
           margin="20px auto"
         />
       </Slide>

@@ -7,7 +7,7 @@ module.exports = {
   devtool: 'source-map',
   entry: [
     'webpack-hot-middleware/client',
-    './index'
+    './presentation'
   ],
   output: {
     path: path.join(__dirname, 'dist'),
@@ -56,5 +56,11 @@ module.exports = {
       loader: 'url-loader?mimetype=image/jpg',
       include: path.join(__dirname, 'assets')
     }]
+  },
+  resolve: {
+    alias: {
+      assets: path.join(__dirname, 'assets'),
+      src: path.join(__dirname, 'src')
+    }
   }
 };

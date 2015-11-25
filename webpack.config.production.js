@@ -4,7 +4,7 @@ var path = require("path");
 var webpack = require("webpack");
 
 module.exports = {
-  entry: "./index",
+  entry: "./presentation",
   output: {
     path: path.join(__dirname, "dist"),
     filename: "bundle.js",
@@ -38,5 +38,11 @@ module.exports = {
       test: /\.svg$/,
       loader: "url?limit=10000&mimetype=image/svg+xml"
     }]
+  },
+  resolve: {
+    alias: {
+      assets: path.join(__dirname, 'assets'),
+      src: path.join(__dirname, 'src')
+    }
   }
 };
