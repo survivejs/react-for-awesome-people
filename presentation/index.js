@@ -13,6 +13,7 @@ import Interactive from "assets/interactive";
 require("normalize.css");
 require("src/themes/default/index.css");
 
+const slideTransition = ['zoom', 'fade'];
 const images = {
   javascript: require("assets/javascript.jpg"),
   javascript2: require("assets/javascript2.jpg"),
@@ -29,7 +30,7 @@ preloader([images.moduleCounts, images.redmonk, images.jobs]);
 
 render(
   <Spectacle>
-    <Deck transition={["zoom", "slide"]} transitionDuration={500}>
+    <Deck transition={slideTransition} transitionDuration={500}>
       <Slide transition={["zoom"]} bgColor="primary">
         <Heading size={1} fit caps lineHeight={1} textColor="black">
           How to write a book and
@@ -39,7 +40,7 @@ render(
         </Heading>
       </Slide>
 
-      <Slide transition={['zoom', 'fade']} bgColor="primary"
+      <Slide transition={slideTransition} bgColor="primary"
         notes="<ul><li>Amazing growth rate.</li><li>At this rate bigger than others combined.</li></ul>">
         <Heading size={1} textColor="tertiary">
           Module Counts
@@ -54,7 +55,7 @@ render(
         </Layout>
       </Slide>
 
-      <Slide transition={['zoom', 'fade']} bgColor="primary"
+      <Slide transition={slideTransition} bgColor="primary"
         notes="<ul><li>Popular</li><li>Same goes for AltJS</li></ul>">
         <Layout>
           <Link href="http://redmonk.com/jgovernor/2015/07/31/programming-language-rankings-summer-2015/">
@@ -63,7 +64,7 @@ render(
         </Layout>
       </Slide>
 
-      <Slide transition={['zoom', 'fade']} bgColor="primary"
+      <Slide transition={slideTransition} bgColor="primary"
         notes="<ul><li>Angular dominates the work market.</li><li>Early signs of React.</li></ul>">
         <Heading size={1} textColor="tertiary">
           Job Trends
@@ -78,7 +79,7 @@ render(
         </Layout>
       </Slide>
 
-      <Slide transition={['zoom', 'fade']} bgColor="primary"
+      <Slide transition={slideTransition} bgColor="primary"
         notes="<ul><li>Also job titles change.</li><li>Increasing demand for full stack developers.</li></ul>">
         <Heading size={1} textColor="tertiary">
           Job Trends II
@@ -93,23 +94,23 @@ render(
         </Layout>
       </Slide>
 
-      <Slide transition={["slide"]} bgColor="black" notes="">
+      <Slide transition={slideTransition} bgColor="black" notes="">
         <Image src={images.javascript.replace("/", "")} margin="0px auto 40px" height="650px"/>
       </Slide>
 
-      <Slide transition={["slide"]} bgColor="black" notes="">
+      <Slide transition={slideTransition} bgColor="black" notes="">
         <Image src={images.jackie.replace("/", "")} margin="0px auto 40px" height="381px"/>
       </Slide>
 
-      <Slide transition={["slide"]} bgColor="black" notes="">
+      <Slide transition={slideTransition} bgColor="black" notes="">
         <Image src={images.javascript2.replace("/", "")} margin="0px auto 40px" height="650px"/>
       </Slide>
 
-      <Slide transition={["slide"]} bgColor="white" notes="">
+      <Slide transition={slideTransition} bgColor="white" notes="">
         <Image src={images.logo.replace("/", "")} margin="0px auto 40px" height="566px"/>
       </Slide>
 
-      <Slide transition={["zoom"]} bgColor="primary">
+      <Slide transition={slideTransition} bgColor="primary">
         <Heading size={1} fit caps lineHeight={1} textColor="black">
           SurviveJS
         </Heading>
@@ -118,17 +119,50 @@ render(
         </Heading>
       </Slide>
 
-      <Slide transition={["slide"]} bgColor="black" notes="">
+      <Slide transition={slideTransition} bgColor="black" notes="">
         <Image src={images.kanban.replace("/", "")} margin="0px auto 40px" height="279px"/>
       </Slide>
 
+      <Slide transition={slideTransition} bgColor="primary">
+        <iframe
+          width="135%"
+          height="750px"
+          style={{transform: 'scale(0.75, 0.75)', transformOrigin: 'top left'}}
+          src="https://www.survivejs.com"/>
+      </Slide>
 
-      <Slide transition={["zoom", "fade"]} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
-        <CodePane
-          lang="jsx"
-          source={require("raw!assets/deck.example")}
-          margin="20px auto"
-        />
+      <Slide transition={slideTransition} bgColor="primary">
+        <iframe
+          width="135%"
+          height="750px"
+          style={{transform: 'scale(0.75, 0.75)', transformOrigin: 'top left'}}
+          src="https://antwarjs.github.io"/>
+      </Slide>
+
+      <Slide transition={slideTransition} bgColor="primary">
+        <iframe
+          width="135%"
+          height="750px"
+          style={{transform: 'scale(0.75, 0.75)', transformOrigin: 'top left'}}
+          src="https://leanpub.com/survivejs_webpack_react"/>
+      </Slide>
+
+      <Slide transition={slideTransition} bgColor="primary">
+        <Heading size={1} fit>
+          @survivejs
+        </Heading>
+      </Slide>
+
+      <Slide transition={slideTransition} bgColor="primary">
+        <Heading size={1} fit>
+          Quora
+        </Heading>
+      </Slide>
+
+      <Slide transition={slideTransition} bgColor="primary">
+        <Heading size={1} fit>
+          <Link href="http://www.reactindiebundle.com/">React Indie Bundle</Link>
+        </Heading>
       </Slide>
 
       <Slide transition={["slide"]} bgDarken={0.75}>
