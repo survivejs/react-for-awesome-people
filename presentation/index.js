@@ -38,12 +38,12 @@ render(
         <Image src={images.javascript.replace("/", "")} margin="0px auto 40px" height="650px"/>
       </Slide>
 
-      <Slide transition={["slide"]} bgColor="white" notes="">
-        <Image src={images.logo.replace("/", "")} margin="0px auto 40px" height="566px"/>
-      </Slide>
-
       <Slide transition={["slide"]} bgColor="black" notes="">
         <Image src={images.javascript2.replace("/", "")} margin="0px auto 40px" height="650px"/>
+      </Slide>
+
+      <Slide transition={["slide"]} bgColor="white" notes="">
+        <Image src={images.logo.replace("/", "")} margin="0px auto 40px" height="566px"/>
       </Slide>
 
       <Slide transition={["zoom"]} bgColor="primary">
