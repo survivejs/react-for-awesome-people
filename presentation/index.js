@@ -18,9 +18,14 @@ const images = {
   javascript2: require("assets/javascript2.jpg"),
   logo: require("assets/logo.png"),
   kanban: require("assets/kanban.gif"),
+  moduleCounts: require("assets/module_counts.png"),
+  redmonk: require("assets/redmonk.png"),
+  jobs: require("assets/jobs.png"),
+  jobTitles: require("assets/jobTitles.png"),
+  jackie: require("assets/jackie.png"),
 };
 
-preloader([images.javascript, images.javascript2, images.logo]);
+preloader([images.moduleCounts, images.redmonk, images.jobs]);
 
 render(
   <Spectacle>
@@ -34,8 +39,66 @@ render(
         </Heading>
       </Slide>
 
+      <Slide transition={['zoom', 'fade']} bgColor="primary"
+        notes="<ul><li>Amazing growth rate.</li><li>At this rate bigger than others combined.</li></ul>">
+        <Heading size={1} textColor="tertiary">
+          Module Counts
+        </Heading>
+        <Layout>
+          <Image src={images.moduleCounts.replace("/", "")} padding="20px" />
+        </Layout>
+        <Layout>
+          <Text>
+            <Link href="http://www.modulecounts.com/">modulecounts.com</Link>
+          </Text>
+        </Layout>
+      </Slide>
+
+      <Slide transition={['zoom', 'fade']} bgColor="primary"
+        notes="<ul><li>Popular</li><li>Same goes for AltJS</li></ul>">
+        <Layout>
+          <Link href="http://redmonk.com/jgovernor/2015/07/31/programming-language-rankings-summer-2015/">
+            <Image src={images.redmonk.replace("/", "")} />
+          </Link>
+        </Layout>
+      </Slide>
+
+      <Slide transition={['zoom', 'fade']} bgColor="primary"
+        notes="<ul><li>Angular dominates the work market.</li><li>Early signs of React.</li></ul>">
+        <Heading size={1} textColor="tertiary">
+          Job Trends
+        </Heading>
+        <Layout>
+          <Image src={images.jobs.replace("/", "")} padding="20px" />
+        </Layout>
+        <Layout>
+          <Text>
+            <Link href="http://www.indeed.com/jobtrends?q=Angularjs%2C+React.js%2C+Knockout%2C+Backbone.js&l=">Indeed</Link>
+          </Text>
+        </Layout>
+      </Slide>
+
+      <Slide transition={['zoom', 'fade']} bgColor="primary"
+        notes="<ul><li>Also job titles change.</li><li>Increasing demand for full stack developers.</li></ul>">
+        <Heading size={1} textColor="tertiary">
+          Job Trends II
+        </Heading>
+        <Layout>
+          <Image src={images.jobTitles.replace("/", "")} padding="20px" />
+        </Layout>
+        <Layout>
+          <Text>
+            <Link href="http://www.indeed.com/jobanalytics/jobtrends?q=frontend%2C+backend%2C+full+stack&l=">Indeed</Link>
+          </Text>
+        </Layout>
+      </Slide>
+
       <Slide transition={["slide"]} bgColor="black" notes="">
         <Image src={images.javascript.replace("/", "")} margin="0px auto 40px" height="650px"/>
+      </Slide>
+
+      <Slide transition={["slide"]} bgColor="black" notes="">
+        <Image src={images.jackie.replace("/", "")} margin="0px auto 40px" height="381px"/>
       </Slide>
 
       <Slide transition={["slide"]} bgColor="black" notes="">
@@ -58,6 +121,7 @@ render(
       <Slide transition={["slide"]} bgColor="black" notes="">
         <Image src={images.kanban.replace("/", "")} margin="0px auto 40px" height="279px"/>
       </Slide>
+
 
       <Slide transition={["zoom", "fade"]} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
         <CodePane
