@@ -24,6 +24,7 @@ const images = {
   jobs: require("assets/jobs.png"),
   jobTitles: require("assets/jobTitles.png"),
   jackie: require("assets/jackie.png"),
+  indieBundle: require("assets/indiebundle.png"),
 };
 
 preloader([images.moduleCounts, images.redmonk, images.jobs]);
@@ -159,10 +160,10 @@ render(
         </Heading>
       </Slide>
 
-      <Slide transition={slideTransition} bgColor="primary">
-        <Heading size={1} fit>
-          <Link href="http://www.reactindiebundle.com/">React Indie Bundle</Link>
-        </Heading>
+      <Slide transition={slideTransition} bgColor="black" notes="">
+        <Link href="http://www.reactindiebundle.com/">
+          <Image src={images.indieBundle.replace("/", "")} margin="0px auto 40px" height="600px"/>
+        </Link>
       </Slide>
 
       <Slide transition={["slide"]} bgDarken={0.75}>
