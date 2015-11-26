@@ -352,7 +352,7 @@ render(
 
       <Slide transition={slideTransition} bgColor="primary">
         <Heading size={1} fit>
-          What Next?
+          What next?
         </Heading>
       </Slide>
 
