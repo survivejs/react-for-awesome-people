@@ -6,6 +6,6 @@ main();
 
 function main() {
   ghpages.publish('./', {
-    src: 'index.html|dist/*'
+    src: 'index.html|dist/*|assets/*'
   }, console.error.bind(console));
 }
