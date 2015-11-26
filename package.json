@@ -10,7 +10,7 @@
     "build:lib": "babel src -d lib",
     "build:dist": "NODE_ENV=production webpack --config webpack.config.production.js",
     "lint": "eslint --ext .js,.jsx src",
-    "deploy": "npm run build:dist && node ./src/deploy.js",
+    "deploy": "node ./src/deploy.js",
     "preversion": "npm run clean:lib && npm run lint",
     "version": "npm run build:lib",
     "prepublish": "npm run clean:lib && npm run build:lib",
