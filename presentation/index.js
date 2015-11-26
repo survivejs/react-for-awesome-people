@@ -26,6 +26,7 @@ const images = {
   markdown: require("assets/markdown.png"),
   github: require("assets/github.png"),
   covers: require("assets/covers.jpg"),
+  openClosed: require("assets/open_closed.jpg")
 };
 
 preloader([images.moduleCounts, images.redmonk, images.jobs]);
@@ -308,13 +309,13 @@ render(
         </Heading>
       </Slide>
 
-      <Slide transition={slideTransition} bgColor="primary">
+      <Slide transition={slideTransition} bgImage={images.openClosed.replace("/", "")} bgDarken={0.5}>
         <Layout>
           <Fill>
             <Heading size={4} caps textColor="secondary" bgColor="white" margin={10}>
               Open
             </Heading>
-            <Markdown>
+            <Markdown style={{color: "white"}}>
           {`
 * Easier to market
 * Easier to collaborate
@@ -326,7 +327,7 @@ render(
             <Heading size={4} caps textColor="secondary" bgColor="white" margin={10}>
               Closed
             </Heading>
-            <Markdown>
+            <Markdown style={{color: "white"}}>
           {`
 * Harder to market
 * Harder to collaborate

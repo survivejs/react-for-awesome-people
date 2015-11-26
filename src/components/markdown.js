@@ -69,11 +69,11 @@ export const mdastConfigDefault = {
 
 export default class Markdown extends React.Component {
   render() {
-    const { source, children, mdastConfig } = this.props;
+    const { source, children, mdastConfig, ...props } = this.props;
     const content = (isUndefined(source) || source === "") ? children : source;
 
     return (
-      <div>
+      <div {...props}>
         {mdast().use(mdastReact, mdastConfig).process(content)}
       </div>
     );
