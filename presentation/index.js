@@ -111,7 +111,7 @@ render(
       </Slide>
 
       <Slide transition={slideTransition} bgColor="primary">
-        <Heading size={1} fit caps lineHeight={1} textColor="black">
+        <Heading size={1} fit lineHeight={1} textColor="black">
           SurviveJS
         </Heading>
         <Heading size={1} fit>
