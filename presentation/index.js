@@ -8,12 +8,10 @@ import {
 
 import preloader from "src/utils/preloader";
 
-import Interactive from "assets/interactive";
-
 require("normalize.css");
 require("src/themes/default/index.css");
 
-const slideTransition = ['zoom', 'fade'];
+const slideTransition = ['spin', 'zoom'];
 const images = {
   javascript: require("assets/javascript.jpg"),
   javascript2: require("assets/javascript2.jpg"),
@@ -25,6 +23,9 @@ const images = {
   jobTitles: require("assets/jobTitles.png"),
   jackie: require("assets/jackie.png"),
   indieBundle: require("assets/indiebundle.png"),
+  markdown: require("assets/markdown.png"),
+  github: require("assets/github.png"),
+  covers: require("assets/covers.jpg"),
 };
 
 preloader([images.moduleCounts, images.redmonk, images.jobs]);
@@ -41,6 +42,29 @@ render(
         </Heading>
       </Slide>
 
+      <Slide transition={slideTransition} bgColor="tertiary">
+        <Heading caps fit size={1} textColor="primary">
+          JavaScript Usage on Sites
+        </Heading>
+        <Markdown>
+          {`
+* 2011 - 38.2%
+* 2013 - 60.4%
+* 2015 - 70.5%
+* Source: [W3Techs](http://w3techs.com/technologies/history_overview/javascript_library/all/y)
+          `}
+        </Markdown>
+      </Slide>
+
+      <Slide transition={slideTransition} bgColor="primary"
+        notes="<ul><li>Popular</li><li>Same goes for AltJS</li></ul>">
+        <Layout>
+          <Link href="http://redmonk.com/jgovernor/2015/07/31/programming-language-rankings-summer-2015/">
+            <Image src={images.redmonk.replace("/", "")} />
+          </Link>
+        </Layout>
+      </Slide>
+
       <Slide transition={slideTransition} bgColor="primary"
         notes="<ul><li>Amazing growth rate.</li><li>At this rate bigger than others combined.</li></ul>">
         <Heading size={1} textColor="tertiary">
@@ -53,15 +77,6 @@ render(
           <Text>
             <Link href="http://www.modulecounts.com/">modulecounts.com</Link>
           </Text>
-        </Layout>
-      </Slide>
-
-      <Slide transition={slideTransition} bgColor="primary"
-        notes="<ul><li>Popular</li><li>Same goes for AltJS</li></ul>">
-        <Layout>
-          <Link href="http://redmonk.com/jgovernor/2015/07/31/programming-language-rankings-summer-2015/">
-            <Image src={images.redmonk.replace("/", "")} />
-          </Link>
         </Layout>
       </Slide>
 
@@ -95,6 +110,20 @@ render(
         </Layout>
       </Slide>
 
+      <Slide transition={slideTransition} bgColor="black">
+        <BlockQuote>
+          <Quote>Average salary of a React developer in SF - $153k</Quote>
+          <Cite><Link href="http://www.indeed.com/salary?q1=React+Js+Front+End+Engineer&l1=San+Francisco%2C+CA">Indeed</Link></Cite>
+        </BlockQuote>
+      </Slide>
+
+      <Slide transition={slideTransition} bgColor="black">
+        <BlockQuote>
+          <Quote>Always bet on JS!</Quote>
+          <Cite>Brendan Eich</Cite>
+        </BlockQuote>
+      </Slide>
+
       <Slide transition={slideTransition} bgColor="black" notes="">
         <Image src={images.javascript.replace("/", "")} margin="0px auto 40px" height="650px"/>
       </Slide>
@@ -125,11 +154,17 @@ render(
       </Slide>
 
       <Slide transition={slideTransition} bgColor="primary">
-        <iframe
-          width="135%"
-          height="750px"
-          style={{transform: 'scale(0.75, 0.75)', transformOrigin: 'top left'}}
-          src="https://www.survivejs.com"/>
+        <Heading size={1} fit>
+          Technology
+        </Heading>
+      </Slide>
+
+      <Slide transition={slideTransition} bgColor="primary" notes="">
+        <Image src={images.markdown.replace("/", "")} margin="0px auto 40px" height="127px"/>
+      </Slide>
+
+      <Slide transition={slideTransition} bgColor="tertiary" notes="">
+        <Image src={images.github.replace("/", "")} margin="0px auto 40px" height="209px"/>
       </Slide>
 
       <Slide transition={slideTransition} bgColor="primary">
@@ -141,22 +176,206 @@ render(
       </Slide>
 
       <Slide transition={slideTransition} bgColor="primary">
-        <iframe
-          width="135%"
-          height="750px"
-          style={{transform: 'scale(0.75, 0.75)', transformOrigin: 'top left'}}
-          src="https://leanpub.com/survivejs_webpack_react"/>
+        <Heading size={1} fit>
+          Process
+        </Heading>
+      </Slide>
+
+      <Slide transition={slideTransition} bgColor="tertiary">
+        <Heading caps size={1} textColor="primary">
+          Drivers
+        </Heading>
+        <Markdown>
+          {`
+* Passion, interest in topic
+* Community (readers, collaborators, my editor)
+* Money (validates product, allows to continue)
+          `}
+        </Markdown>
+      </Slide>
+
+      <Slide transition={slideTransition} bgColor="tertiary">
+        <Heading caps size={1} textColor="primary">
+          Release Process
+        </Heading>
+        <Markdown>
+          {`
+* Modeled after open source software development
+* Fast, light releases (weekly first, monthly now)
+* 1.0.0, 1.1.0, ..., 1.9.7
+* Release notes through blog
+* Continuous improvement based on feedback
+          `}
+        </Markdown>
+      </Slide>
+
+      <Slide transition={slideTransition} bgColor="tertiary" notes="">
+        <Image src={images.covers.replace("/", "")} margin="0px auto 40px" height="600px"/>
+      </Slide>
+
+      <Slide transition={slideTransition} bgColor="tertiary">
+        <Heading caps fit size={1} textColor="primary">
+          Process Results
+        </Heading>
+        <Markdown>
+          {`
+* Higher quality than I could have ever reached on my own
+* 223+ pages, 42k+ words, 15 chapters
+* 600+ readers at Leanpub
+* Thousands outside (60k+ visitors per month)
+* Tens of contributors (GitHub issues, Disqus, direct feedback, Gitter, ...)
+          `}
+        </Markdown>
       </Slide>
 
       <Slide transition={slideTransition} bgColor="primary">
         <Heading size={1} fit>
-          @survivejs
+          Marketing
+        </Heading>
+      </Slide>
+
+      <Slide transition={slideTransition} bgColor="primary">
+        <iframe
+          width="135%"
+          height="750px"
+          style={{transform: 'scale(0.75, 0.75)', transformOrigin: 'top left'}}
+          src="https://www.survivejs.com"/>
+      </Slide>
+
+      <Slide transition={slideTransition} bgColor="tertiary">
+        <Heading caps fit size={1} textColor="primary">
+          Marketing Channels
+        </Heading>
+        <Markdown>
+          {`
+* [GitHub](https://github.com/survivejs/webpack_react) - 1708 commits, 23+ contributors, 206 closed issues, 634 stars, 110 forks
+* [Twitter](https://twitter.com/survivejs) - 700+ followers
+* [Leanpub](https://leanpub.com/survivejs_webpack_react) - 600+ readers, featured 4 times, amongst weekly bestsellers
+* MailChimp - ~200 subscribers
+* Guest posts
+          `}
+        </Markdown>
+      </Slide>
+
+      <Slide transition={slideTransition} bgColor="tertiary">
+        <Heading caps fit size={1} textColor="primary">
+          Marketing Results
+        </Heading>
+        <Markdown>
+          {`
+* [Alexa](http://www.alexa.com/siteinfo/survivejs.com) - Top 300k
+* [SimilarWeb](http://www.similarweb.com/website/survivejs.com) - Estimated traffic, 60k+ visits per month
+* Estimated PageRank: 3 - Aiming for 4
+* [Blog](http://survivejs.com/blog/) - 20+ posts, 9 interviews
+* [Gitter](https://gitter.im/survivejs/webpack_react) - ~140 people
+* [Reactiflux](http://www.reactiflux.com/) - Thousands of people
+          `}
+        </Markdown>
+      </Slide>
+
+      <Slide transition={slideTransition} bgColor="primary">
+        <Heading size={1} fit>
+          Sales
+        </Heading>
+      </Slide>
+
+      <Slide transition={slideTransition} bgColor="tertiary">
+        <Heading caps fit size={1} textColor="primary">
+          From Zero to $10k
+        </Heading>
+        <Markdown>
+          {`
+* Started selling at April
+* First, free "sale" on 11th
+* First paid one on 12th, $8.5
+* Hit $1k around July &#8594; [Crisis of faith](http://survivejs.com/blog/the-story-so-far/)
+* Currently sales hover around $100 per day
+* Gradually raised price level to $19.99 per book
+* $10k total sales in sight. Not much but not little either.
+          `}
+        </Markdown>
+      </Slide>
+
+      <Slide transition={slideTransition} bgColor="primary">
+        <Heading size={1} fit>
+          1$ == ~0.5€
         </Heading>
       </Slide>
 
       <Slide transition={slideTransition} bgColor="primary">
         <Heading size={1} fit>
-          Quora
+          Business Models
+        </Heading>
+      </Slide>
+
+      <Slide transition={slideTransition} bgColor="primary">
+        <Layout>
+          <Fill>
+            <Heading size={4} caps textColor="secondary" bgColor="white" margin={10}>
+              Open
+            </Heading>
+            <Markdown>
+          {`
+* Easier to market
+* Easier to collaborate
+* Harder to monetize
+          `}
+            </Markdown>
+          </Fill>
+          <Fill>
+            <Heading size={4} caps textColor="secondary" bgColor="white" margin={10}>
+              Closed
+            </Heading>
+            <Markdown>
+          {`
+* Harder to market
+* Harder to collaborate
+* Easier to monetize
+          `}
+            </Markdown>
+          </Fill>
+        </Layout>
+      </Slide>
+
+      <Slide transition={slideTransition} bgColor="secondary">
+        <Heading size={1} fit>
+          Open + Closed = Open Source++
+        </Heading>
+      </Slide>
+
+      <Slide transition={slideTransition} bgColor="secondary">
+        <Heading size={1} fit>
+          Upsell
+        </Heading>
+      </Slide>
+
+      <Slide transition={slideTransition} bgColor="primary">
+        <Heading size={1} fit>
+          What Next?
+        </Heading>
+      </Slide>
+
+      <Slide transition={slideTransition} bgColor="secondary">
+        <Heading size={1} fit>
+          Amazon (CreateSpace), iBooks, ???
+        </Heading>
+      </Slide>
+
+      <Slide transition={slideTransition} bgColor="secondary">
+        <Heading size={1} fit>
+          More content
+        </Heading>
+      </Slide>
+
+      <Slide transition={slideTransition} bgColor="secondary">
+        <Heading size={1} fit>
+          Webpack/React Cookbook Reimagined
+        </Heading>
+      </Slide>
+
+      <Slide transition={slideTransition} bgColor="secondary">
+        <Heading size={1} fit>
+          Antwar 1.0
         </Heading>
       </Slide>
 
@@ -166,93 +385,21 @@ render(
         </Link>
       </Slide>
 
-      <Slide transition={["slide"]} bgDarken={0.75}>
-        <Appear fid="1">
-          <Heading size={1} caps fit textColor="primary">
-            Full Width
-          </Heading>
-        </Appear>
-        <Appear fid="2">
-          <Heading size={1} caps fit textColor="tertiary">
-            Adjustable Darkness
-          </Heading>
-        </Appear>
-        <Appear fid="3">
-          <Heading size={1} caps fit textColor="primary">
-            Background Imagery
-          </Heading>
-        </Appear>
-      </Slide>
-
-      <Slide transition={["zoom", "fade"]} bgColor="primary">
-        <Heading caps fit>Flexible Layouts</Heading>
-        <Layout>
-          <Fill>
-            <Heading size={4} caps textColor="secondary" bgColor="white" margin={10}>
-              Left
-            </Heading>
-          </Fill>
-          <Fill>
-            <Heading size={4} caps textColor="secondary" bgColor="white" margin={10}>
-              Right
-            </Heading>
-          </Fill>
-        </Layout>
-      </Slide>
-
-      <Slide transition={["slide"]} bgColor="black">
-        <BlockQuote>
-          <Quote>Wonderfully formatted quotes</Quote>
-          <Cite>Ken Wheeler</Cite>
-        </BlockQuote>
-      </Slide>
-
-      <Slide transition={["spin", "zoom"]} bgColor="tertiary">
-        <Heading caps fit size={1} textColor="primary">
-          Inline Markdown
-        </Heading>
-        <Markdown>
-          {`
-You can write inline images, [Markdown Links](http://commonmark.org), paragraph text and most other markdown syntax
-* Lists too!
-* With ~~strikethrough~~ and _italic_
-* And lets not forget **bold**
-          `}
-        </Markdown>
-      </Slide>
-
-      <Slide transition={["slide", "spin"]} bgColor="primary">
+      <Slide transition={slideTransition} bgColor="primary">
         <Heading caps fit size={1} textColor="tertiary">
-          Smooth
-        </Heading>
-        <Heading caps fit size={1} textColor="secondary">
-          Combinable Transitions
+          Questions?
         </Heading>
       </Slide>
 
-      <Slide transition={["fade"]} bgColor="secondary" textColor="primary">
-        <List>
-          <ListItem><Appear fid="1">Inline style based theme system</Appear></ListItem>
-          <ListItem><Appear fid="2">Autofit text</Appear></ListItem>
-          <ListItem><Appear fid="3">Flexbox layout system</Appear></ListItem>
-          <ListItem><Appear fid="4">React-Router navigation</Appear></ListItem>
-          <ListItem><Appear fid="5">PDF export</Appear></ListItem>
-          <ListItem><Appear fid="6">And...</Appear></ListItem>
-        </List>
-      </Slide>
-
-      <Slide transition={["slide"]} bgColor="primary">
-        <Heading size={1} caps fit textColor="tertiary">
-          Your presentations are interactive
+      <Slide transition={slideTransition} bgColor="tertiary">
+        <Heading size={1} caps fit textColor="primary">
+          Made with sisu in Finland by
         </Heading>
-        <Interactive/>
-      </Slide>
-
-      <Slide transition={["spin", "slide"]} bgColor="tertiary">
-        <Heading size={1} caps fit lineHeight={1.5} textColor="primary">
-          Made with love in Seattle by
-        </Heading>
-        <Link href="http://www.formidablelabs.com"><Image width="100%" src={images.logo}/></Link>
+        <Link href="https://twitter.com/bebraw">
+          <Heading caps fit size={2} textColor="secondary">
+            Juho Vepsäläinen
+          </Heading>
+        </Link>
       </Slide>
     </Deck>
   </Spectacle>
