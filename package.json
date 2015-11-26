@@ -1,7 +1,8 @@
 {
-  "name": "spectacle",
-  "version": "1.0.0-rc1",
-  "description": "ReactJS Powered Presentation Framework",
+  "name": "how-to-write-a-book-and-survivejs-it",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Presentation slides",
   "main": "lib/index.js",
   "jsnext:main": "src/index.js",
   "scripts": {
@@ -17,7 +18,7 @@
     "prepublish": "npm run clean:lib && npm run build:lib",
     "start": "node server.js"
   },
-  "author": "",
+  "author": "Juho Vepsalainen",
   "license": "MIT",
   "dependencies": {
     "history": "1.13.1",
