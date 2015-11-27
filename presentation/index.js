@@ -203,7 +203,7 @@ render(
           {`
 * Modeled after open source software development
 * Fast, light releases (weekly first, monthly now)
-* 1.0.0, 1.1.0, ..., 1.9.7
+* 1.0.0, 1.1.0, ..., 1.9.7, 1.9.10
 * Release notes through blog
 * Continuous improvement based on feedback
           `}
