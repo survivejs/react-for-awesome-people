@@ -226,6 +226,23 @@ export default class Slides extends React.Component {
               src="https://leanpub.com/survivejs_webpack_react"/>
           </Slide>
 
+          <Slide transition={slideTransition} bgColor="tertiary">
+            <Heading caps fit size={1} textColor="primary">
+              Leanpub in brief
+            </Heading>
+            <Markdown>
+    {`
+* Light platform for selling ebooks (pdf, epub, mobi)
+* Provides Markdown based generator (supports custom syntax)
+* Takes $0.50 + 10% cut per sale (if starting price isn't zero)
+* Supports "pay what you want"
+* Doesn't give direct access to your client information :(
+* Decent starting point, though
+* Alternatives: [Gumroad](https://gumroad.com/), [DPD](https://getdpd.com/), [Amazon](http://www.amazon.com/), [Lulu](https://www.lulu.com/)
+    `}
+            </Markdown>
+          </Slide>
+
           <Slide transition={slideTransition} bgColor="primary">
             <Heading size={1} caps fit>
               Process
