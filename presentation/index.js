@@ -164,8 +164,37 @@ render(
         <Image src={images.markdown.replace("/", "")} margin="0px auto 40px" height="127px"/>
       </Slide>
 
+      <Slide transition={slideTransition} bgColor="tertiary">
+        <Heading caps fit size={1} textColor="primary">
+          Markdown in brief
+        </Heading>
+        <Markdown>
+          {`
+* Basic syntax for authoring
+* Integrates well with other tooling &#8594; ebook versions, book, site
+* Not WYSIWYG
+* Easy to version
+* Ideal for programmers
+          `}
+        </Markdown>
+      </Slide>
+
       <Slide transition={slideTransition} bgColor="tertiary" notes="">
         <Image src={images.github.replace("/", "")} margin="0px auto 40px" height="209px"/>
+      </Slide>
+
+      <Slide transition={slideTransition} bgColor="tertiary">
+        <Heading caps fit size={1} textColor="primary">
+          GitHub in brief
+        </Heading>
+        <Markdown>
+          {`
+* Good collaboration platform
+* Primarily for code but works for books
+* Provides versioning (Git), issue tracker, basic analytics
+* Book site is hosted on top of [GitHub Pages](https://pages.github.com/)
+          `}
+        </Markdown>
       </Slide>
 
       <Slide transition={slideTransition} bgColor="primary">
@@ -175,6 +204,21 @@ render(
           style={{transform: 'scale(0.75, 0.75)', transformOrigin: 'top left'}}
           src="https://antwarjs.github.io"/>
       </Slide>
+
+<Slide transition={slideTransition} bgColor="tertiary">
+  <Heading caps fit size={1} textColor="primary">
+    Antwar in brief
+  </Heading>
+  <Markdown>
+    {`
+* Custom site generator based on Webpack and React
+* First version by Brad Denver, forked by Andreas Eldh since. I joined in.
+* Currently taking Antwar to a new direction
+* "Webpack of static site generators"
+* Configuration over Convention
+    `}
+  </Markdown>
+</Slide>
 
       <Slide transition={slideTransition} bgColor="primary">
         <iframe
