@@ -376,6 +376,12 @@ render(
 
       <Slide transition={slideTransition} bgColor="secondary">
         <Heading size={1} fit>
+          jster.net 2.0
+        </Heading>
+      </Slide>
+
+      <Slide transition={slideTransition} bgColor="secondary">
+        <Heading size={1} fit>
           Antwar 1.0
         </Heading>
       </Slide>
