@@ -238,7 +238,7 @@ export default class Slides extends React.Component {
 * Supports "pay what you want"
 * Doesn't give direct access to your client information :(
 * Decent starting point, though
-* Alternatives: [Gumroad](https://gumroad.com/), [DPD](https://getdpd.com/), [Amazon](http://www.amazon.com/), [Lulu](https://www.lulu.com/)
+* Alternatives: [Gumroad](https://gumroad.com/), [DPD](https://getdpd.com/), [Amazon](http://www.amazon.com/), [iBooks](https://www.apple.com/ibooks/), [Lulu](https://www.lulu.com/)
     `}
             </Markdown>
           </Slide>
