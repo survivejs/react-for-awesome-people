@@ -203,11 +203,11 @@ export default class Slides extends React.Component {
               src="https://antwarjs.github.io"/>
           </Slide>
 
-    <Slide transition={slideTransition} bgColor="tertiary">
-      <Heading caps fit size={1} textColor="primary">
-        Antwar in brief
-      </Heading>
-      <Markdown>
+        <Slide transition={slideTransition} bgColor="tertiary">
+          <Heading caps fit size={1} textColor="primary">
+            Antwar in brief
+          </Heading>
+          <Markdown>
     {`
 * Custom site generator based on Webpack and React
 * First version by Brad Denver, forked by Andreas Eldh since. I joined in.
@@ -215,8 +215,8 @@ export default class Slides extends React.Component {
 * "Webpack of static site generators"
 * Configuration over Convention
     `}
-      </Markdown>
-    </Slide>
+            </Markdown>
+          </Slide>
 
           <Slide transition={slideTransition} bgColor="primary">
             <iframe
