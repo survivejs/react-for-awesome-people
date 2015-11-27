@@ -177,6 +177,14 @@ render(
       </Slide>
 
       <Slide transition={slideTransition} bgColor="primary">
+        <iframe
+          width="135%"
+          height="750px"
+          style={{transform: 'scale(0.75, 0.75)', transformOrigin: 'top left'}}
+          src="https://leanpub.com/survivejs_webpack_react"/>
+      </Slide>
+
+      <Slide transition={slideTransition} bgColor="primary">
         <Heading size={1} fit>
           Process
         </Heading>
