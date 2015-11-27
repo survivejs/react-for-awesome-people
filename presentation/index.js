@@ -155,7 +155,7 @@ render(
       </Slide>
 
       <Slide transition={slideTransition} bgColor="primary">
-        <Heading size={1} fit>
+        <Heading size={1} caps fit>
           Technology
         </Heading>
       </Slide>
@@ -185,7 +185,7 @@ render(
       </Slide>
 
       <Slide transition={slideTransition} bgColor="primary">
-        <Heading size={1} fit>
+        <Heading size={1} caps fit>
           Process
         </Heading>
       </Slide>
@@ -238,7 +238,7 @@ render(
       </Slide>
 
       <Slide transition={slideTransition} bgColor="primary">
-        <Heading size={1} fit>
+        <Heading size={1} caps fit>
           Marketing
         </Heading>
       </Slide>
@@ -283,7 +283,7 @@ render(
       </Slide>
 
       <Slide transition={slideTransition} bgColor="primary">
-        <Heading size={1} fit>
+        <Heading size={1} caps fit>
           Sales
         </Heading>
       </Slide>
@@ -312,7 +312,7 @@ render(
       </Slide>
 
       <Slide transition={slideTransition} bgColor="primary">
-        <Heading size={1} fit>
+        <Heading size={1} caps fit>
           Business Models
         </Heading>
       </Slide>
@@ -359,7 +359,49 @@ render(
       </Slide>
 
       <Slide transition={slideTransition} bgColor="primary">
+        <Heading size={1} caps fit>
+          Lessons learned
+        </Heading>
+      </Slide>
+
+      <Slide transition={slideTransition} bgColor="secondary">
         <Heading size={1} fit>
+          Writing books is hard work
+        </Heading>
+      </Slide>
+
+      <Slide transition={slideTransition} bgColor="secondary">
+        <Heading size={1} fit>
+          Marketing and selling even harder
+        </Heading>
+      </Slide>
+
+      <Slide transition={slideTransition} bgColor="secondary">
+        <Heading size={1} fit>
+          Focus on delivering value straight from the start
+        </Heading>
+      </Slide>
+
+      <Slide transition={slideTransition} bgColor="secondary">
+        <Heading size={1} fit>
+          Small bets over big ones
+        </Heading>
+      </Slide>
+
+      <Slide transition={slideTransition} bgColor="secondary">
+        <Heading size={1} fit>
+          Persistency pays off (eventually)
+        </Heading>
+      </Slide>
+
+      <Slide transition={slideTransition} bgColor="secondary">
+        <Heading size={1} fit>
+          Luck is made
+        </Heading>
+      </Slide>
+
+      <Slide transition={slideTransition} bgColor="primary">
+        <Heading size={1} caps fit>
           What next?
         </Heading>
       </Slide>
