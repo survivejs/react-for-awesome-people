@@ -267,17 +267,6 @@ export default class Slides extends React.Component {
               <Image src={images.indieBundle.replace("/", "")} margin="0px auto 40px" height="600px"/>
             </Link>
           </Slide>
-
-          <Slide transition={slideTransition} bgColor="tertiary">
-            <Heading size={1} caps fit textColor="primary">
-              Made in Finland by
-            </Heading>
-            <Link href="https://twitter.com/bebraw">
-              <Heading caps fit size={2} textColor="secondary">
-                Juho Vepsäläinen
-              </Heading>
-            </Link>
-          </Slide>
         </Deck>
       </Spectacle>
     );
