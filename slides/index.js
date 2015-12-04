@@ -58,15 +58,6 @@ export default class Slides extends React.Component {
           </Slide>
 
           <Slide transition={slideTransition} bgColor="primary"
-            notes="<ul><li>Popular</li><li>Same goes for AltJS</li></ul>">
-            <Layout>
-              <Link href="http://redmonk.com/jgovernor/2015/07/31/programming-language-rankings-summer-2015/">
-                <Image src={images.redmonk.replace("/", "")} />
-              </Link>
-            </Layout>
-          </Slide>
-
-          <Slide transition={slideTransition} bgColor="primary"
             notes="<ul><li>Amazing growth rate.</li><li>At this rate bigger than others combined.</li></ul>">
             <Heading size={1} textColor="tertiary">
               Module Counts
@@ -84,7 +75,7 @@ export default class Slides extends React.Component {
           <Slide transition={slideTransition} bgColor="primary"
             notes="<ul><li>Angular dominates the work market.</li><li>Early signs of React.</li></ul>">
             <Heading size={1} textColor="tertiary">
-              Job Trends
+              Job Trends I
             </Heading>
             <Layout>
               <Image src={images.jobs.replace("/", "")} padding="20px" />
@@ -117,12 +108,6 @@ export default class Slides extends React.Component {
 
           <Slide transition={slideTransition} bgColor="black" notes="">
             <Image src={images.jackie.replace("/", "")} margin="0px auto 40px" height="381px"/>
-          </Slide>
-
-          <Slide transition={slideTransition} bgColor="primary">
-            <Heading size={1} caps fit>
-              DOM
-            </Heading>
           </Slide>
 
           <Slide transition={slideTransition} bgColor="white" notes="">
