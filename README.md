@@ -1,4 +1,4 @@
-# How to write a book and SurviveJS it
+# React for awesome people
 
 Presentation slides.
 
