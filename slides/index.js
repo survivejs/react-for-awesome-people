@@ -188,6 +188,61 @@ export default class Slides extends React.Component {
             </Markdown>
           </Slide>
 
+          <Slide transition={slideTransition} bgColor="tertiary">
+            <Heading caps fit size={1} textColor="primary">
+              React Related Architectures
+            </Heading>
+            <Markdown>
+          {`
+* [Facebook Flux](https://facebook.github.io/flux/) &#8594; [Redux](https://github.com/rackt/redux)
+* [Mobservable](https://github.com/mweststrate/mobservable)
+* [Cerebral](http://www.cerebraljs.com/)
+* [Baobab](https://github.com/Yomguithereal/baobab)
+* No single, right way
+          `}
+            </Markdown>
+          </Slide>
+
+          <Slide transition={slideTransition} bgColor="tertiary">
+            <Heading caps fit size={1} textColor="primary">
+              Styling in React
+            </Heading>
+            <Markdown>
+          {`
+* No clear standard yet
+* Inline styling?
+* FOUC - Extract CSS
+* [CSS Modules](https://github.com/css-modules) - Solves CSS globalization
+          `}
+            </Markdown>
+          </Slide>
+
+          <Slide transition={slideTransition} bgColor="tertiary">
+            <Heading caps fit size={1} textColor="primary">
+              Related Tooling
+            </Heading>
+            <Markdown>
+          {`
+* [Browserify](http://browserify.org/), [Webpack](https://webpack.github.io/), [jspm](http://jspm.io/) - Bundlers
+* [Babel](https://babeljs.io/) - ES2015+, JSX, plugins
+* [Flow](http://flowtype.org/), [Typescript](http://www.typescriptlang.org/) - Better typing, replaces propTypes + adds more safety
+          `}
+            </Markdown>
+          </Slide>
+
+          <Slide transition={slideTransition} bgColor="tertiary">
+            <Heading caps fit size={1} textColor="primary">
+              Testing React
+            </Heading>
+            <Markdown>
+          {`
+* [Jest](https://facebook.github.io/jest/), [Karma](https://karma-runner.github.io)+[Mocha](https://mochajs.org/)+..., [Tape](https://www.npmjs.com/package/tape)
+* Acceptance testing (Selenium)
+* Property based testing?
+          `}
+            </Markdown>
+          </Slide>
+
           <Slide transition={slideTransition} bgColor="secondary">
             <Layout>
               <Fill>
@@ -217,16 +272,16 @@ export default class Slides extends React.Component {
             </Layout>
           </Slide>
 
-          <Slide transition={slideTransition} bgColor="black" notes="">
-            <Link href="http://www.reactindiebundle.com/">
-              <Image src={images.indieBundle.replace("/", "")} margin="0px auto 40px" height="600px"/>
-            </Link>
-          </Slide>
-
           <Slide transition={slideTransition} bgColor="primary">
             <Heading caps fit size={1} textColor="tertiary">
               Questions?
             </Heading>
+          </Slide>
+
+          <Slide transition={slideTransition} bgColor="black" notes="">
+            <Link href="http://www.reactindiebundle.com/">
+              <Image src={images.indieBundle.replace("/", "")} margin="0px auto 40px" height="600px"/>
+            </Link>
           </Slide>
 
           <Slide transition={slideTransition} bgColor="tertiary">
