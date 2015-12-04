@@ -221,7 +221,7 @@ export default class Slides extends React.Component {
             <Markdown>
           {`
 * [Jest](https://facebook.github.io/jest/), [Karma](https://karma-runner.github.io)+[Mocha](https://mochajs.org/)+..., [Tape](https://www.npmjs.com/package/tape)
-* Acceptance testing (Selenium)
+* Acceptance testing (Selenium), [CodeceptJS](http://codecept.io/)
 * Property based testing?
           `}
             </Markdown>
