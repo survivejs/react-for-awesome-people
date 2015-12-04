@@ -14,7 +14,6 @@ const images = {
   javascript: require("assets/javascript.jpg"),
   javascript2: require("assets/javascript2.jpg"),
   moduleCounts: require("assets/module_counts.png"),
-  redmonk: require("assets/redmonk.png"),
   jobs: require("assets/jobs.png"),
   jobTitles: require("assets/jobTitles.png"),
   jackie: require("assets/jackie.png"),
@@ -27,7 +26,7 @@ const images = {
   construction: require("assets/construction.jpg"),
 };
 
-preloader([images.moduleCounts, images.redmonk, images.jobs]);
+preloader([images.moduleCounts, images.jobs, images.jobTitles]);
 
 export default class Slides extends React.Component {
   render() {
