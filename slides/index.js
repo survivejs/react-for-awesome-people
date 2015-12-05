@@ -59,7 +59,7 @@ export default class Slides extends React.Component {
           <Slide transition={slideTransition} bgColor="primary"
             notes="<ul><li>Also job titles change.</li><li>Increasing demand for full stack developers.</li></ul>">
             <Heading size={1} textColor="tertiary">
-              Job Trends II
+              Job Trends
             </Heading>
             <Layout>
               <Image src={images.jobTitles.replace("/", "")} padding="20px" />
