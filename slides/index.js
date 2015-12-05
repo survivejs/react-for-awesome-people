@@ -271,8 +271,14 @@ export default class Slides extends React.Component {
           </Slide>
 
           <Slide transition={slideTransition} bgColor="black" notes="">
+            <Heading fit size={1} textColor="tertiary">
+              <a style={{
+                color: "white",
+                textDecoration: "none"
+              }} href="http://www.reactindiebundle.com">reactindiebundle.com</a>
+            </Heading>
             <Link href="http://www.reactindiebundle.com/">
-              <Image src={images.indieBundle.replace("/", "")} margin="0px auto 40px" height="600px"/>
+              <Image src={images.indieBundle.replace("/", "")} margin="0px auto 40px" height="500px"/>
             </Link>
           </Slide>
         </Deck>
