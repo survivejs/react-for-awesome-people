@@ -101,24 +101,26 @@ export default class Slides extends React.Component {
             </Layout>
           </Slide>
 
-          <Slide transition={slideTransition} bgColor="black" notes="">
-            <Image src={images.javascript.replace("/", "")} margin="0px auto 40px" height="650px"/>
-          </Slide>
-
-          <Slide transition={slideTransition} bgColor="black" notes="">
-            <Image src={images.jackie.replace("/", "")} margin="0px auto 40px" height="381px"/>
+          <Slide transition={slideTransition} bgColor="primary">
+            <Heading caps fit size={1} textColor="tertiary">
+              DOM
+            </Heading>
           </Slide>
 
           <Slide transition={slideTransition} bgColor="white" notes="">
             <Image src={images.jquery.replace("/", "")} margin="0px auto 40px" height="147px"/>
           </Slide>
 
+          <Slide transition={slideTransition} bgColor="white" notes="">
+            <Heading fit size={1} textColor="primary">
+              $('selector').plugin();
+            </Heading>
+          </Slide>
+
           <Slide transition={slideTransition} bgImage={images.spaghetti.replace("/", "")} />
 
-          <Slide transition={slideTransition} bgColor="primary">
-            <Heading size={1} caps fit>
-              The rise of SPAs
-            </Heading>
+          <Slide transition={slideTransition} bgColor="black" notes="">
+            <Image src={images.jackie.replace("/", "")} margin="0px auto 40px" height="381px"/>
           </Slide>
 
           <Slide transition={slideTransition} bgImage={images.construction.replace("/", "")} />
@@ -133,6 +135,10 @@ export default class Slides extends React.Component {
 
           <Slide transition={slideTransition} bgColor="white" notes="">
             <Image src={images.ember.replace("/", "")} margin="0px auto 40px" height="206px"/>
+          </Slide>
+
+          <Slide transition={slideTransition} bgColor="black" notes="">
+            <Image src={images.javascript.replace("/", "")} margin="0px auto 40px" height="650px"/>
           </Slide>
 
           <Slide transition={slideTransition} bgColor="primary">
@@ -166,8 +172,9 @@ export default class Slides extends React.Component {
 * Virtual DOM - Decouples React from DOM
 * Just view layer
 * Component thinking!
-* Props, state, life cycle
+* \`props\`, \`state\`, life cycle
 * JSX
+* Universal JavaScript
           `}
             </Markdown>
           </Slide>
@@ -258,7 +265,7 @@ export default class Slides extends React.Component {
 
           <Slide transition={slideTransition} bgColor="primary">
             <Heading caps fit size={1} textColor="tertiary">
-              Questions?
+              Q&A
             </Heading>
           </Slide>
 
