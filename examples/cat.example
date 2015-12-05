@@ -1,6 +1,5 @@
 import React from "react";
 import {Heading} from "src";
-import styles from "./styles";
 
 export default class CatCounter extends React.Component {
   constructor(props) {
@@ -12,12 +11,12 @@ export default class CatCounter extends React.Component {
   }
   render() {
     return (
-      <div>
-        <Heading size={5} textColor="black">
+      <div className="cat-counter">
+        <Heading className="cat-heading" size={5} textColor="black">
           I've seen {this.state.count} cats
         </Heading>
-        <button style={styles} type="button" onClick={this.sawCat}>
-          Saw a Cat
+        <button className="cat-button" type="button" onClick={this.sawCat}>
+          {this.props.buttonText}
         </button>
       </div>
     );
