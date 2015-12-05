@@ -14,7 +14,6 @@ const images = {
   javascript: require("assets/javascript.jpg"),
   javascript2: require("assets/javascript2.jpg"),
   moduleCounts: require("assets/module_counts.png"),
-  jobs: require("assets/jobs.png"),
   jobTitles: require("assets/jobTitles.png"),
   jackie: require("assets/jackie.png"),
   indieBundle: require("assets/indiebundle.png"),
@@ -26,7 +25,7 @@ const images = {
   construction: require("assets/construction.jpg"),
 };
 
-preloader([images.moduleCounts, images.jobs, images.jobTitles]);
+preloader([images.moduleCounts, images.jobTitles]);
 
 export default class Slides extends React.Component {
   render() {
@@ -42,20 +41,6 @@ export default class Slides extends React.Component {
             </Heading>
           </Slide>
 
-          <Slide transition={slideTransition} bgColor="tertiary">
-            <Heading caps fit size={1} textColor="primary">
-              JavaScript Usage on Sites
-            </Heading>
-            <Markdown>
-          {`
-* 2011 - 38.2%
-* 2013 - 60.4%
-* 2015 - 70.5%
-* Source: [W3Techs](http://w3techs.com/technologies/history_overview/javascript_library/all/y)
-          `}
-            </Markdown>
-          </Slide>
-
           <Slide transition={slideTransition} bgColor="primary"
             notes="<ul><li>Amazing growth rate.</li><li>At this rate bigger than others combined.</li></ul>">
             <Heading size={1} textColor="tertiary">
@@ -67,21 +52,6 @@ export default class Slides extends React.Component {
             <Layout>
               <Text>
                 <Link href="http://www.modulecounts.com/">modulecounts.com</Link>
-              </Text>
-            </Layout>
-          </Slide>
-
-          <Slide transition={slideTransition} bgColor="primary"
-            notes="<ul><li>Angular dominates the work market.</li><li>Early signs of React.</li></ul>">
-            <Heading size={1} textColor="tertiary">
-              Job Trends I
-            </Heading>
-            <Layout>
-              <Image src={images.jobs.replace("/", "")} padding="20px" />
-            </Layout>
-            <Layout>
-              <Text>
-                <Link href="http://www.indeed.com/jobtrends?q=Angularjs%2C+React.js%2C+Knockout%2C+Backbone.js&l=">Indeed</Link>
               </Text>
             </Layout>
           </Slide>
