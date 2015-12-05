@@ -216,7 +216,7 @@ export default class Slides extends React.Component {
           {`
 * [Browserify](http://browserify.org/), [Webpack](https://webpack.github.io/), [jspm](http://jspm.io/) - Bundlers
 * [Babel](https://babeljs.io/) - ES2015+, JSX, plugins
-* [Flow](http://flowtype.org/), [Typescript](http://www.typescriptlang.org/) - Better typing, replaces \`propTypes\` + adds more safety
+* [Flow](http://flowtype.org/), [Typescript](http://www.typescriptlang.org/) - Better typing, replaces \`propTypes\` and adds more safety
           `}
             </Markdown>
           </Slide>
